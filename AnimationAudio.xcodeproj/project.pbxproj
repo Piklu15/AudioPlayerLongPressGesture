@@ -15,6 +15,7 @@
 		10B065901F6F865D00E25936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B0658E1F6F865D00E25936 /* LaunchScreen.storyboard */; };
 		10B0659B1F6F865D00E25936 /* AnimationAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0659A1F6F865D00E25936 /* AnimationAudioTests.m */; };
 		10B065A61F6F865D00E25936 /* AnimationAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B065A51F6F865D00E25936 /* AnimationAudioUITests.m */; };
+		10E9866E1F7114D500A66A8D /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E9866D1F7114D500A66A8D /* SoundPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		10B065A11F6F865D00E25936 /* AnimationAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B065A51F6F865D00E25936 /* AnimationAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationAudioUITests.m; sourceTree = "<group>"; };
 		10B065A71F6F865D00E25936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E9866C1F7114D500A66A8D /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		10E9866D1F7114D500A66A8D /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1006163C1F70EBF5007CD0F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10B065741F6F865D00E25936 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 				10B065991F6F865D00E25936 /* AnimationAudioTests */,
 				10B065A41F6F865D00E25936 /* AnimationAudioUITests */,
 				10B0657E1F6F865D00E25936 /* Products */,
+				1006163C1F70EBF5007CD0F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,8 @@
 				10B065841F6F865D00E25936 /* AppDelegate.m */,
 				10B065861F6F865D00E25936 /* ViewController.h */,
 				10B065871F6F865D00E25936 /* ViewController.m */,
+				10E9866C1F7114D500A66A8D /* SoundPlayer.h */,
+				10E9866D1F7114D500A66A8D /* SoundPlayer.m */,
 				10B065891F6F865D00E25936 /* Main.storyboard */,
 				10B0658C1F6F865D00E25936 /* Assets.xcassets */,
 				10B0658E1F6F865D00E25936 /* LaunchScreen.storyboard */,
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					10B0657C1F6F865D00E25936 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZVM88MB5D5;
 						ProvisioningStyle = Automatic;
 					};
 					10B065951F6F865D00E25936 = {
@@ -275,6 +289,7 @@
 			files = (
 				10B065881F6F865D00E25936 /* ViewController.m in Sources */,
 				10B065851F6F865D00E25936 /* AppDelegate.m in Sources */,
+				10E9866E1F7114D500A66A8D /* SoundPlayer.m in Sources */,
 				10B065821F6F865D00E25936 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -423,8 +438,9 @@
 		10B065AB1F6F865D00E25936 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVM88MB5D5;
 				INFOPLIST_FILE = AnimationAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Divine-it.AnimationAudio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,8 +450,9 @@
 		10B065AC1F6F865D00E25936 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVM88MB5D5;
 				INFOPLIST_FILE = AnimationAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Divine-it.AnimationAudio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +524,7 @@
 				10B065AC1F6F865D00E25936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B065AD1F6F865D00E25936 /* Build configuration list for PBXNativeTarget "AnimationAudioTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				10B065AF1F6F865D00E25936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B065B01F6F865D00E25936 /* Build configuration list for PBXNativeTarget "AnimationAudioUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +542,7 @@
 				10B065B21F6F865D00E25936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
